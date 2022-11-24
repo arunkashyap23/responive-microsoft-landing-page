@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  text-align: center;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.box {
+  width: 100vw;
+  max-width: 100%;
+}
+
+.container {
+  padding: 25px 25px 0;
+  margin: 0 auto;
+  width: 80%;
+}
+
+nav {
+  min-height: 50px;
+  width: 100%;
+}
+
+nav .sidebar {
+  position: absolute;
+  top: 1%;
+  right: 2.5%;
+  font-size: 16px;
+  display: none;
+}
+
+nav .logo {
+  float: left;
+  margin-right: 25px;
+}
+
+nav .logo img {
+  width: 110px;
+}
+
+nav .nav-links {
+  display: inline-block;
+}
+
+nav .nav-links ul li {
+  display: inline-block;
+}
+
+nav .nav-links ul li a {
+  color: inherit;
+  margin-right: 8px;
+  padding: 5px;
+}
+
+nav .nav-links ul li a:hover {
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+nav .icons {
+  float: right;
+  width: 65px;
+}
+
+nav .icons > svg {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+/* slide */
+.slide {
+  width: 100%;
+  min-height: 400px;
+  background-image: url("images/slide1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 15px;
+}
+
+.slide h2 {
+  position: relative;
+  top: 230px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.slide p {
+  position: relative;
+  top: 240px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.slide button {
+  position: relative;
+  top: 250px;
+  left: 46%;
+}
+
+/* cards */
+.card {
+  width: 100%;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.card .box {
+  float: left;
+  width: 24%;
+  margin-right: 11.67px;
+}
+
+.card .box img,
+h3,
+p {
+  margin-bottom: 10px;
+}
+
+.card .box p {
+  font-size: 17px;
+}
+
+.card .box a {
+  font-weight: 550;
+  text-transform: uppercase;
+}
+
+.card .box a:hover {
+  margin-left: 10px;
+}
+
+/* game logo */
+.game-logo {
+  min-height: 350px;
+  background-image: url("images/xbox.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -26px;
+  margin-bottom: 15px;
+}
+
+.game-logo .content {
+  width: 40%;
+  padding: 60px 35px;
+}
+
+.game-logo .content h2,
+p {
+  margin-bottom: 15px;
+}
+
+.game-logo .content p {
+  line-height: 1.5em;
+}
+
+/* scenery */
+.scenery {
+  min-height: 350px;
+  margin-bottom: 20px;
+  background-image: url("images/carbon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -65px;
+  color: white;
+}
+
+.scenery .content {
+  width: 50%;
+  padding: 100px 35px;
+}
+
+.scenery .content h2,
+p {
+  margin-bottom: 15px;
+}
+
+.scenery .content p {
+  font-size: 17px;
+  line-height: 1.2em;
+}
+
+.scenery .content .button {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.scenery .content .button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* follow us */
+.follow-on {
+  margin: 20px 0;
+}
+.follow-on p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-right: 15px;
+  float: left;
+}
+
+.follow-on img {
+  margin-right: 8px;
+}
+
+/* footer */
+
+footer {
+  background-color: #e7e7e7;
+  color: gray;
+  line-height: 1.8em;
+  overflow: hidden;
+}
+
+footer .links {
+  width: 100%;
+  min-height: 230px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+footer .link {
+  width: 16.3%;
+  float: left;
+  color: gray;
+  margin-right: 4px;
+  overflow: hidden;
+}
+
+footer .link a {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+}
+
+footer .last-line {
+  margin-top: 10px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+footer .last-line p {
+  float: left;
+  margin-right: 95px;
+  margin-left: 10px;
+}
+
+footer .last-line ul {
+  float: right;
+}
+
+footer .last-line ul li {
+  display: inline-block;
+}
+
+footer .last-line ul li a {
+  margin-right: 15px;
+  font-size: 14px;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  nav .show ul {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+  /* sidebar */
+  nav .sidebar {
+    display: block;
+  }
+  nav .show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 3;
+  }
+
+  nav .show ul li {
+    display: block;
+    width: 100%;
+    padding: 25px;
+  }
+
+  nav .sidebar:hover {
+    opacity: 0.5;
+  }
+  /* slide */
+  .slide {
+    background-position: -250px 10px;
+    position: relative;
+  }
+  .slide h2 {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    right: 12%;
+  }
+
+  .slide p {
+    position: absolute;
+    top: 60%;
+    left: 12%;
+    right: 12%;
+  }
+
+  .slide button {
+    position: absolute;
+    top: 75%;
+    left: 12%;
+    right: 12%;
+  }
+  /* cards */
+  /* .card{
+    width: 100%;
+  } */
+  .card .box {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .card .box img {
+    display: block;
+    width: 100%;
+  }
+  /* game logo */
+  .game-logo {
+    background-position: -380px -25px;
+  }
+  .game-logo .content {
+    width: 60%;
+  }
+  .game-logo p {
+    display: none;
+  }
+  /* scenery */
+  .scenery {
+    background-position: -340px 0;
+    width: 100%;
+  }
+  .scenery .content {
+    width: 100%;
+  }
+
+  .scenery .content p {
+    display: none;
+  }
+  /* follow on */
+  .follow-on {
+    margin: 10px;
+  }
+  .follow-on p {
+    float: none;
+  }
+  /* footer */
+  footer .link {
+    width: 100%;
+    float: none;
+    margin-bottom: 15px;
+  }
+  footer .last-line p {
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+  footer .last-line ul {
+    float: none;
+    margin: 0 auto;
+  }
+  footer .last-line ul li {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1519px) {
+  /* slide */
+  .slide {
+    background-position: -25px 0;
+  }
+  /* card */
+  .card {
+    width: 100%;
+  }
+  .card .box {
+    width: 45%;
+    float: left;
+    margin-left: 2px;
+    margin-right: 16.54px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .card .box:nth-child(even) {
+    float: right;
+    margin-left: 5px;
+  }
+  /* game logo */
+  .game-logo {
+    background-position: -8px 0;
+    width: 100%;
+  }
+  /* footer */
+  footer .links {
+    width: 100%;
+    overflow: hidden;
+  }
+  footer .link {
+    width: 45%;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  footer .link:nth-child(even) {
+    float: right;
+  }
+  footer .last-line p{
+    margin-right: 25px;
+  }
+}
+
+/* @media (max-width: 825px) {
+  nav ul {
+    display: none;
+  }
+} */
